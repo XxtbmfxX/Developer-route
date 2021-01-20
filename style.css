@@ -1,0 +1,27 @@
+body{
+    background-color:royalblue
+}
+
+h1{
+    color: #ff0000;
+    padding: 10px; 
+    background-color:yellowgreen
+}
+#lap{
+    background-color:aqua;
+    color: #a159ca;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:x-large
+}
+p{
+    padding: 10px 10px 10px;
+    
+    background-color:rgba(211, 248, 0, 0.788);
+
+}
+
+
+footer{
+    color: #13ff89;
+    background-color:rebeccapurple;
+}
