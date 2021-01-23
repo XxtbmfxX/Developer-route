@@ -1,43 +1,82 @@
-
 body{
-    margin:0;
+    margin: 0px;
+    background-color: #AB88FF;
+    font-family: 'Mulish', sans-serif;
 }
 
 header{
-    
-    background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-
-
+    width: 100%;
+    height: 80px;
+    background-color: #AB88FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
-header img{
 
-    width: 20%;
+
+.header__logo {
+    width: 200px;
     margin-top: 10px;
     margin-left: 10px;
+    
+}
 
+.header__menu{
+    margin-right: 30px;
+    
+}
+
+.header__menu--profile img{
+    margin-right: 10px;
+    width: 50px;
+    height: 31px;
+    border-radius: 50%;
 }
 
 
-div { 
-    font-size: 100%;
+.header__menu--profile p{
+    margin: 0px;
+    
+}
+
+.header__menu--profile{
+    margin-right: 60px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu ul{
+    /* display: none; */
+    list-style: none;
+    padding: 0px;
     position: absolute;
-    right: 0%; 
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -14px;
 }
 
-code{
-    background-color: rgba(99, 99, 99, 0.178);
-    border-radius: 5%;
+.header__menu li{
+    margin: 10px 0px
 }
 
-p{
-    font-size: 100%;
+
+.header__menu li a{
+    color: white;
+    text-decoration: none;
 }
 
-.botones__botoncito{
-    color: red
+/* se lee de isquierda a derecha como un parentesis */
+.header__menu li a{
+    
+    text-decoration: underline;
 }
 
-.botones__but-on{
-    color: yellow
+
+
+/* cuando pasemos el mause por ensima del menu y cuando pasemos el mause por ensima de las ul */
+
+.header__menu:hover ul, ul:hover{
+    display: block;
 }
