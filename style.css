@@ -68,7 +68,7 @@ header{
 }
 
 /* se lee de isquierda a derecha como un parentesis */
-.header__menu li a{
+.header__menu li a:hover{
     
     text-decoration: underline;
 }
@@ -79,4 +79,19 @@ header{
 
 .header__menu:hover ul, ul:hover{
     display: block;
+}
+/* ------------------------------------------------------------- */
+.main{
+    height: 300px;
+    color: white;
+    align-content: center;
+    
+}
+
+.input{
+    border: 2px solid white ;
+    border-radius: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    height: 50px 20px ;
 }
