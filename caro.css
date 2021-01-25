@@ -1,0 +1,105 @@
+body{
+    margin: 0px;
+}
+
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    /* para que tenga una sangria con sus elementos internos */
+}
+
+.carousel__container{
+    white-space: nowrap;
+    /* para que continue a la derecha  */
+    margin: 70px 0px;
+    padding-bottom: 10px;
+    /* para que al hacer over no corte la imagen */
+}
+
+.carousel-item{
+    background-color: aqua;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    display: inline-block; 
+    /* para que no se envuelva */
+    overflow: hidden;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 450ms;
+    transform-origin:  center left ;
+    position: relative;
+    
+}
+
+/* -------hover------- */
+carousel__item:hover ~ .carousel-item{
+    transform: translate3d(100px, 0, 0);
+
+}
+
+.carousel__container:hover .carousel-item{
+    opacity: 0.3;
+}
+
+/* ----------hasta aca si pasamos el mause por ensima se volvera opcao */
+
+
+.carousel__container:hover .carousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+
+}
+/* -----------diseño interno carousel------- */
+.carousel-item__img{
+    width:200px;
+    height:250px;
+    object-fit: cover;
+    /* esto sirve para que se ajuste al tamaño real */
+}
+
+.carousel-item__details{
+    background:linear-gradient (to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    
+    color: white;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    /* para poder moverlo */
+    top: 80px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;         
+
+}
+
+
+.carousel-item__details--title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.carousel-item__details--subtitle{
+    margin: 0;
+    font-size: 15px;
+}
+
+.carousel-item__details img{
+    margin-top: 65px;
+    height: 30px;
+
+}
+
+
+.carousel-item__details:hover{
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+}

@@ -46,6 +46,7 @@ header{
     display: flex;
     align-items: center;
 }
+/* --------------creacion lista desplegable---------------- */
 
 .header__menu ul{
     display: none;
@@ -80,7 +81,7 @@ header{
 .header__menu:hover ul, ul:hover{
     display: block;
 }
-/* ------------------------------------------------------------- */
+/* -----------------------buscador-------------------------------------- */
 .main{
     height: 300px;
     color: white;
@@ -106,3 +107,4 @@ header{
 ::placeholder{
     color: white;
 }
+
