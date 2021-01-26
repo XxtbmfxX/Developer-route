@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     font-family: 'Mulish', sans-serif;
 }
 
@@ -22,8 +23,21 @@ body{
     
 }
 
-.login{
-  
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 
+.login{
+  display: flex;
+  justify-content: center;
+    
+}
+
+.login__container--social--media img{
+    align-self: ;
+    height: 50px;
+ 
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    
 }
